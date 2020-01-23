@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap');
+
+html {
+  overflow: hidden;
+  background: var(--grayscale1);
+}
+
+#rootPopupProvider {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.05); */
+}
+
+:root,
+#root,
+body {
+  background: var(--grayscale1);
+}
+
+:root {
+  --grayscale0: hsl(240, 18%, 5%);
+
+  --grayscale1: hsl(240, 18%, 8%);
+  --grayscale2: hsl(240, 18%, 11%);
+  --grayscale2-1: hsla(240, 18%, 12%, 75%);
+  --grayscale3: hsl(240, 18%, 14%);
+  --grayscale4: hsl(240, 18%, 17%);
+  --grayscale5: hsl(240, 18%, 20%);
+  --grayscale6: hsl(240, 18%, 23%);
+  --grayscale7: hsl(240, 18%, 26%);
+  --grayscale8: hsl(240, 18%, 29%);
+  --grayscale9: hsl(240, 18%, 32%);
+  --grayscale10: hsl(240, 18%, 35%);
+  --grayscale11: hsl(240, 18%, 38%);
+  --grayscale12: hsl(240, 18%, 41%);
+  --grayscale13: hsl(240, 18%, 44%);
+  --grayscale14: hsl(240, 18%, 47%);
+  --grayscale15: hsl(240, 18%, 50%);
+  --grayscale16: hsl(240, 18%, 53%);
+  --grayscale17: hsl(240, 18%, 56%);
+  --grayscale18: hsl(240, 18%, 59%);
+  --grayscale19: hsl(240, 18%, 62%);
+  --grayscale20: hsl(240, 18%, 65%);
+  --grayscale21: hsl(240, 18%, 68%);
+  --color-primary-100: #ead6ff;
+  --color-primary-200: #d2adff;
+  --color-primary-300: #b784ff;
+  --color-primary-400: #a066ff;
+  --color-primary-500: #7a33ff;
+  --color-primary-600: #5e25db;
+  --color-primary-700: #4519b7;
+  --color-primary-800: #301093;
+  --color-primary-900: #20097a;
+  --color-primary-transparent-100: rgba(122, 51, 255, 0.08);
+  --color-primary-transparent-200: rgba(122, 51, 255, 0.16);
+  --color-primary-transparent-300: rgba(122, 51, 255, 0.24);
+  --color-primary-transparent-400: rgba(122, 51, 255, 0.32);
+  --color-primary-transparent-500: rgba(122, 51, 255, 0.4);
+  --color-primary-transparent-600: rgba(122, 51, 255, 0.48);
+  --color-success-100: #f5fdce;
+  --color-success-200: #e8fc9d;
+  --color-success-300: #d5f66c;
+  --color-success-400: #c1ed47;
+  --color-success-500: #a3e20f;
+  --color-success-600: #85c20a;
+  --color-success-700: #6aa207;
+  --color-success-800: #518304;
+  --color-success-900: #3f6c02;
+  --color-success-transparent-100: rgba(163, 226, 15, 0.08);
+  --color-success-transparent-200: rgba(163, 226, 15, 0.16);
+  --color-success-transparent-300: rgba(163, 226, 15, 0.24);
+  --color-success-transparent-400: rgba(163, 226, 15, 0.32);
+  --color-success-transparent-500: rgba(163, 226, 15, 0.4);
+  --color-success-transparent-600: rgba(163, 226, 15, 0.48);
+  --color-info-100: #d7f8ff;
+  --color-info-200: #afecff;
+  --color-info-300: #87dcff;
+  --color-info-400: #69cbff;
+  --color-info-500: #38afff;
+  --color-info-600: #2889db;
+  --color-info-700: #1c66b7;
+  --color-info-800: #114893;
+  --color-info-900: #0a337a;
+  --color-info-transparent-100: rgba(56, 175, 255, 0.08);
+  --color-info-transparent-200: rgba(56, 175, 255, 0.16);
+  --color-info-transparent-300: rgba(56, 175, 255, 0.24);
+  --color-info-transparent-400: rgba(56, 175, 255, 0.32);
+  --color-info-transparent-500: rgba(56, 175, 255, 0.4);
+  --color-info-transparent-600: rgba(56, 175, 255, 0.48);
+  --color-warning-100: #fff8d1;
+  --color-warning-200: #fff0a3;
+  --color-warning-300: #ffe575;
+  --color-warning-400: #ffda52;
+  --color-warning-500: #ffc919;
+  --color-warning-600: #dba712;
+  --color-warning-700: #b7870c;
+  --color-warning-800: #936807;
+  --color-warning-900: #7a5304;
+  --color-warning-transparent-100: rgba(255, 201, 25, 0.08);
+  --color-warning-transparent-200: rgba(255, 201, 25, 0.16);
+  --color-warning-transparent-300: rgba(255, 201, 25, 0.24);
+  --color-warning-transparent-400: rgba(255, 201, 25, 0.32);
+  --color-warning-transparent-500: rgba(255, 201, 25, 0.4);
+  --color-warning-transparent-600: rgba(255, 201, 25, 0.48);
+  --color-danger-100: #ffe6d6;
+  --color-danger-200: #ffc7ae;
+  --color-danger-300: #ffa185;
+  --color-danger-400: #ff7d67;
+  --color-danger-500: #ff4235;
+  --color-danger-600: #db262a;
+  --color-danger-700: #b71a2a;
+  --color-danger-800: #931029;
+  --color-danger-900: #7a0a28;
+  --color-danger-transparent-100: rgba(255, 66, 53, 0.08);
+  --color-danger-transparent-200: rgba(255, 66, 53, 0.16);
+  --color-danger-transparent-300: rgba(255, 66, 53, 0.24);
+  --color-danger-transparent-400: rgba(255, 66, 53, 0.32);
+  --color-danger-transparent-500: rgba(255, 66, 53, 0.4);
+  --color-danger-transparent-600: rgba(255, 66, 53, 0.48);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  background: var(--grayscale0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--grayscale5);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--grayscale0);
+}
+
+*::-webkit-scrollbar-button {
+  background: var(--grayscale1);
+  display: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass Mono', monospace;
+  background: var(--grayscale0);
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hind', sans-serif;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+small {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.__react_component_tooltip.type-light.place-right:after {
+  border-right-color: transparent;
+  border-right-style: transparent;
+  border-right-width: 0px;
+}
+
+.react-waves {
+  pointer-events: none;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "apothecary-the-daw-reimagined",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@cleandersonlobo/react-mic": "1.1.1",
+    "@dschoon/react-waves": "3.0.1",
+    "dayjs": "1.8.19",
+    "mobx": "^5.15.2",
+    "mobx-react": "^6.1.4",
+    "mobx-react-lite": "^1.5.2",
+    "nanoid": "2.1.9",
+    "peaks.js": "0.17.0",
+    "random-int": "2.0.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-dropzone": "10.2.1",
+    "react-portal": "4.2.0",
+    "react-scripts": "3.0.1",
+    "react-use": "13.21.0",
+    "react-wavesurfer3": "1.0.1",
+    "styled-components": "5.0.0",
+    "tone": "13.8.25",
+    "wavesurfer.js": "3.3.1",
+    "wretch": "1.6.0"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
