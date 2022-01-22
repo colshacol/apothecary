@@ -11,7 +11,7 @@
     "mobx": "^5.15.2",
     "mobx-react": "^6.1.4",
     "mobx-react-lite": "^1.5.2",
-    "nanoid": "2.1.9",
+    "nanoid": "3.1.31",
     "peaks.js": "0.17.0",
     "random-int": "2.0.1",
     "react": "16.12.0",
